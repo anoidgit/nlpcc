@@ -108,6 +108,10 @@ train.txt, test.txt, dev.txt分别是训练集，测试集以及开发集。id2t
 
 给出的数据是总数据的30%，train跟dev比例为2:1. 其余的70%将会当作测试数据，会在截止日前一周发布。
 
+***预训的embedding 放在[百度云](https://pan.baidu.com/s/1mhPddpu)，可以自行下载。<br>
+测试集已经放在/test目录下。也可以通过百度云下载[测试集](https://pan.baidu.com/s/1qXYzB5a)。<br>
+测试结果应该**严格按照测试样本顺序**保存在result.txt文件中（一行一个标签，参考test/test.example文件格式），以附件的形式发送到邮箱 task2@nlpcc2017.info。<br>
+
 ## 代码描述
 	├── Config.py
 	├── helper.py
@@ -117,3 +121,14 @@ train.txt, test.txt, dev.txt分别是训练集，测试集以及开发集。id2t
  `helper.py`: 加载数据，加载辞典，计算准确度等等。<br>
 ### `model.py`: 模型代码。
 > 如果需要增加或者修改模型，可以在Model类中的`add_model()`函数中添加一个新的模型模块，或者修改已经有的模型(lstm_basic, cnn_basic, cbow_basic)。
+
+## 引用
+
+```
+@InProceedings{qiu2017overview,
+  Title                    = {Overview of the NLPCC 2017 Shared Task: Chinese News Headline Categorization},
+  Author                   = {Xipeng Qiu and Jingjing Gong and Xuanjing Huang},
+  Booktitle                = {arXiv:1706.02883v1},
+  Year                     = {2017}
+}
+```
